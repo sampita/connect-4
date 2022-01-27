@@ -69,6 +69,7 @@ th {
 }
 
 #reset-button {
-  background-color: #b30404;
+  margin-top: 2em;
+  background-color: #f03c44;
   width: 130px;
 }
