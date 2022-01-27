@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* #app {
+  background-color: black;
+} */
+
+
+h3 {
+  font-family: 'Arial';
+  font-weight: 500;
+}
+
+button {
+  color: white;
+  background-color: #0454b4;
+  border: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+tr {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+td {
+  width: 4em;
+  height: 4.3em;
+  background-color: white;
+  border-radius: 70px;
+  border: 3px solid #0454b4;
+}
+
+th {
+  width: 4.4em;
+}
+
+.app {
+  margin: 16px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gameboard {
+  width: 510px;
+  height: 440px;
+  background-color: #0454b4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#reset-button {
+  background-color: #b30404;
+  width: 130px;
 }
