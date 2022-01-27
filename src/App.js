@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import './index.css'
+import logo from '../src/assets/connect-four-logo.png'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         return 'red'
         break
       case 2:
-        return 'black'
+        return 'yellow'
         break
       default:
         return 'white'
@@ -65,17 +66,18 @@ function App() {
   useEffect(() => generateNewGameboard(), [])
 
   return (
-    <div id="app">
-      <h3 className='center' id='player-turn'>{playerTurn === 1 ? "Red" : "Black"}'s turn</h3>
+    <div id="app" className='center'>
+      <img src={logo} alt='Connect 4 logo' style={{ width: 'auto', height: '6em'}}/>
+      <h3 className='center' id='player-turn'>{playerTurn === 1 ? 'Red' : 'Yellow'}'s turn</h3>
       <section className='center'>
-        <table>
+        <table className='center'>
           <thead>
             <tr id='drop-button-container'>
               {createDropButtons()}
             </tr>
           </thead>
         </table>
-        <div id="gameboard">
+        <div className='center' id='gameboard'>
           <table>
             <tbody>
               {gameboard.map((row, i) => {
@@ -96,8 +98,8 @@ function App() {
           </table>
         </div>
       </section>
-      <div className="center">
-        <button id="reset-button" onClick={() => generateNewGameboard()}>RESET</button>
+      <div className='center'>
+        <button id='reset-button' onClick={() => generateNewGameboard()}>RESET</button>
       </div>
     </div>
   )
